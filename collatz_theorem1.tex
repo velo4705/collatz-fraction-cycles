@@ -1,0 +1,313 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{natbib}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+
+\DeclareMathOperator{\den}{den}
+\DeclareMathOperator{\num}{num}
+\newcommand{\vthree}{v_3}
+\newcommand{\vP}[1]{v_{#1}}
+
+\title{Periodic cycles of the \(2\)-adic rational Collatz map:\\
+3-adic exclusivity and descent on pure 3-power denominators}
+\author{Jovian Wilson Simon}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Statement and setup}
+
+Let \(T\colon \mathbb{Q}_{(2)} \to \mathbb{Q}_{(2)}\) be the Collatz map on
+rationals with odd denominator,
+\[
+  T(x) =
+  \begin{cases}
+    x/2, & \num(x) \text{ even},\\[2pt]
+    3x + 1, & \num(x) \text{ odd},
+  \end{cases}
+\]
+where \(x = a/d\) is written in lowest terms with \(d > 0\) odd.
+
+\begin{definition}[Level, home denominator]
+For reduced \(x = a/d\), set \(\operatorname{lvl}(x) = d\). For a periodic orbit
+\(C = \{x_0,\dots,x_{\lambda-1}\}\), we call \(d' = \operatorname{lvl}(x)\)
+(common to all elements; see Lemma~\ref{lem:nonmixing}) its \emph{home
+denominator}. A cycle is \emph{primitive} if it is entered from some
+\(a/d'\) with \(1 \le a < d'\), \(\gcd(a,d') = 1\) at its own level, and
+\emph{latent} otherwise; the minimal such scan level, if any, has the form
+\(3^{k} d'\) with \(3 \nmid d'\) (Section~\ref{sec:empirical}).
+\end{definition}
+
+\begin{theorem}[Theorem 1: 3-adic exclusivity and descent]\label{thm:main}
+Let \(x_0 = a_0/d_0\) with \(d_0 > 0\) odd, \(\gcd(a_0,d_0) = 1\), and let
+\(x_{n+1} = T(x_n)\).
+\begin{enumerate}
+  \item[(i)] \emph{(Exclusivity.)} If a prime \(p \ne 3\) divides \(d_0\), then
+        \(p\) divides the denominator of every iterate \(x_n\). In particular,
+        no iterate equals \(0\), \(1\), \(2\), or \(4\); hence no orbit starting
+        from \(x_0\) enters the trivial cycle \(\{1,2,4\}\).
+  \item[(ii)] \emph{(Descent.)} If \(3 \mid d_0\), write
+        \(d_0 = 3^{k} m\) with \(3 \nmid m\). Then one factor of \(3\) is removed
+        from the denominator at every odd-numerator step, and no factor of \(3\)
+        is removed at even-numerator steps or when \(3 \nmid d_0\). Consequently,
+        after at most \(k\) odd-numerator steps the orbit is an ordinary
+        integer (denominator \(1\)).
+  \item[(iii)] \emph{(Reduction.)} For \(d_0 = 3^{k}\), every orbit reduces to an
+        ordinary positive integer, and the full collapse to \(\{1,2,4\}\)
+        follows from the integer Collatz problem on the induced terminal box.
+        For \(1 \le k \le 6\) (i.e.\ \(d_0 \le 729\)), this is verified
+        exhaustively: all \(2 \cdot 3^{k-1}\) reduced fractions collapse
+        to \(\{1,2,4\}\) (Table~\ref{tab:collapse}).
+\end{enumerate}
+\end{theorem}
+
+\section{Lemmas}
+
+\begin{lemma}[Stability of non-3 prime factors]\label{lem:non3}
+Let \(x = a/d\) in lowest terms, \(d\) odd. For every prime \(p \neq 3\),
+\[
+  \vP{p}\big(\den(Tx)\big) = \vP{p}(d).
+\]
+\end{lemma}
+\begin{proof}[Proof structure]
+Even step: \(Tx = (a/2)/d\); since \(d\) is odd, \(\gcd(a/2, d) = 1\).
+Odd step: \(Tx = (3a + d)/d\). For a prime \(p \ne 3\) with \(p \mid d\),
+\(p \mid 3a + d\) implies \(p \mid 3a\), hence \(p \mid a\), contradicting
+\(\gcd(a, d) = 1\). Therefore \(\gcd(3a + d, d)\) is a power of \(3\), and no
+\(p \ne 3\) can be cancelled.
+\end{proof}
+
+\begin{lemma}[Exactly one 3 per odd step]\label{lem:three}
+Let \(x = a/d\) as above with \(3^{j} \| d\), \(j \ge 1\). For the odd step,
+\[
+  \vthree(\den(Tx)) = j - 1.
+\]
+Moreover \(\gcd(3a + d, d) = 3\) when \(j \ge 1\) (so exactly one factor is
+cancelled, regardless of how large \(\vthree(3a+d)\) is).
+\end{lemma}
+\begin{proof}[Proof structure]
+Write \(d = 3^{j} m\), \(3 \nmid m\). Then \(\gcd(a, 3m) = 1\).
+\begin{itemize}
+  \item \(3a + d = 3\,(a + 3^{j-1} m)\).
+  \item If \(j \ge 2\), then \(a + 3^{j-1} m \equiv a \not\equiv 0 \pmod 3\),
+        so \(\vthree(3a + d) = 1\) and \(\gcd(3a+d, d) = 3\).
+  \item If \(j = 1\), then \(\vthree(d) = 1\), so any common factor is a
+        power of \(3\) with exponent at most \(1\); \(p \ne 3\) excluded by
+        Lemma~\ref{lem:non3}. Hence \(\gcd(3a+d, d) = 3\).
+\end{itemize}
+In both cases no other prime can cancel, so exactly one factor of \(3\)
+disappears from the denominator.
+\end{proof}
+
+\begin{lemma}[Forced halving]\label{lem:halve}
+If \(a\) and \(d\) are both odd, then \(3a + d\) is even, so every odd step is
+followed by at least one even step before the next odd step.
+\end{lemma}
+\begin{proof}[Proof structure]
+Odd + odd is even; the reduced numerator after an odd step is even, hence the
+following step (at least one) is \(x \mapsto x/2\).
+\end{proof}
+
+\begin{lemma}[Non-mixing of denominators within a cycle]\label{lem:nonmixing}
+All elements of a periodic orbit share the same reduced denominator.
+\end{lemma}
+\begin{proof}[Proof structure]
+Along any iterate, \(\vP{p}(\den)\) is invariant for \(p \ne 3\)
+(Lemma~\ref{lem:non3}), and non-increasing for \(p = 3\): even steps preserve it,
+odd steps decrease it by exactly one when \(\vthree \ge 1\) and preserve it when
+\(\vthree = 0\). On a \emph{cycle}, the net change of every valuation is zero.
+For \(p = 3\) this forces: no odd step with \(\vthree \ge 1\) occurs on a cycle,
+and \(\vthree\) is constant. For \(p \ne 3\), \(\vP{p}\) is constant
+immediately. Two odd positive integers with equal \(p\)-adic valuation for
+every prime \(p\) are equal, so every element of the cycle has the same reduced
+denominator. (Empirically: \(1095/1095\) cycles indiscriminately homed at a
+single denominator.)
+\end{proof}
+
+\begin{corollary}[3-free homes]\label{cor:threefree}
+No periodic orbit of \(T\) is homed at a denominator divisible by \(3\); every
+periodic orbit lives on a denominator coprime to \(3\).
+\end{corollary}
+\begin{proof}[Proof structure]
+Suppose a cycle is homed at \(d'\) with \(3 \mid d'\). Then every element has
+\(\vthree(\den) \ge 1\), so by Lemma~\ref{lem:three} every odd step strictly
+decreases \(\vthree\), and by Lemma~\ref{lem:halve} halvings occur between odd
+steps but never increase \(\vthree\). The net change of \(\vthree\) around a
+cycle is zero, forcing the cycle to contain no odd step at all. But a cycle of
+pure halvings satisfies \(x = x/2^{L}\), so \(x = 0\), contradicting
+\(x = a/d > 0\). Hence \(\vthree(d') = 0\) for every periodic home.
+(Empirically: \(1095/1095\) observed cycles have \(3 \nmid d'\).)
+\end{proof}
+
+\begin{lemma}[Cycle equation]\label{lem:cycle}
+Let \(C\) be a periodic orbit with home denominator \(d'\), \(L\) total halvings
+and \(M\) odd steps, and let \(x_0 \in C\). Then
+\begin{enumerate}
+  \item[(a)] \(2^{L} > 3^{M}\);
+  \item[(b)] \(d' \mid 2^{L} - 3^{M}\);
+  \item[(c)] \(L/M > \log_2 3\);
+  \item[(d)] \#halvings + \#odd steps \(= \lambda = L + M\), the cycle length.
+\end{enumerate}
+\end{lemma}
+\begin{proof}[Proof structure]
+Composing the affine pieces of the \(L\) halvings and \(M\) odd steps over one
+period gives \(x_0 = (3^{M} x_0 + T)/2^{L}\) with \(T \in \mathbb{Z}_{>0}\), so
+\(x_0 (2^{L} - 3^{M}) = T\). Positivity of \(x_0\) and \(T\) forces (a). From
+\(x_0 = a/d'\) with \(\gcd(a, d') = 1\), (b) follows. (c) is immediate from (a).
+In particular \(d' = (2^{L} - 3^{M})/q\) for a positive integer cofactor \(q\);
+\(q = 1\) defines the \emph{minimal-gap} cycles. All \(1095\) cycles observed
+satisfy (a), (b), (c) (Section~\ref{sec:empirical}).
+\end{proof}
+
+\section{Proof of Theorem 1}
+\begin{proof}[Proof structure]
+\textbf{(i)} By Lemma~\ref{lem:non3}, \(\vP{p}(\den(x_n)) = \vP{p}(d_0)\) for all
+\(n\). If \(p \mid d_0\) with \(p \ne 3\), the denominator of \(x_n\) is divisible
+by \(p\) for all \(n\), so \(x_n \notin \{1, 2, 4\}\) (whose denominator is
+\(1\)). \qed
+
+\medskip
+\textbf{(ii)} Let \(x_n = a_n/d_n\) with \(d_n = 3^{j_n} m_n\). Even steps keep
+\(j_n\) fixed (numerator divided by \(2\), \(d_n\) unchanged, denominator still
+odd, coprimality preserved). At an odd step, Lemma~\ref{lem:three} gives
+\(j_{n+1} = j_n - 1\). Hence after exactly \(j_0 = \vthree(d_0) =: k\)
+odd-numerator steps the denominator has lost every factor of \(3\), i.e.\ is
+\(m_0'\), coprime to \(3\). If furthermore \(d_0 = 3^k\) (\(m_0 = 1\)), the
+denominator is \(1\): the orbit is integral. Lemma~\ref{lem:halve} guarantees
+that each of these \(k\) stages happens in finite time (each odd step is
+separated by halvings, all of which decrease the numerator). \qed
+
+\medskip
+\textbf{(iii)} After step~\emph{(ii)} the orbit evolves by the integer Collatz
+map. The first integer reached is bounded: tracing
+\(a \mapsto (a + 3^{j-1})/2^{v_2(a + 3^{j-1})}\) level by level from
+\(a < 3^{k}\) keeps the value below \(2 \cdot 3^{k-1}\). An inductive proof on
+\(k\) reduces the general claim to the integer Collatz problem on the terminal
+box \([1, 2\cdot 3^{k-1})\). For \(k \le 6\) the entire \(k\)-th level is
+verified computationally (every reduced \(a/3^{k}\) collapses to \(\{1,2,4\}\);
+measured maxima of the first integer reached are \(2, 6, 8, 18, 26, 42\)).
+A complete proof for all \(k\) is thus reduced to the integer Collatz conjecture
+restricted to these boxes; the \emph{exclusivity} direction (i) is unconditional.
+\end{proof}
+
+\section{Empirical verification}\label{sec:empirical}
+
+All statements marked \emph{verified} were checked with exact rational
+arithmetic (\texttt{fractions.Fraction}) over every reduced fraction \(a/d\),
+\(1 \le a < d\), \(\gcd(a,d) = 1\), odd \(3 \le d \le 1001\) (500 denominators,
+203{,}380 trajectories, all eventually periodic). Data: \texttt{rational\_cycles.csv},
+registry of all \(1095\) distinct periodic cycles.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+\(d\) & prime? & \(\varphi(d)\) & fraction collapsing to \(1\) \\
+\midrule
+3   & yes & 2   & 1.000000 \\
+9   & no  & 6   & 1.000000 \\
+27  & no  & 18  & 1.000000 \\
+81  & no  & 54  & 1.000000 \\
+243 & no  & 162 & 1.000000 \\
+729 & no  & 486 & 1.000000 \\
+\midrule
+\multicolumn{2}{@{}l}{all other \(494\) denominators} & & 0.000000 \\
+\bottomrule
+\end{tabular}
+\caption{Collapse statistics underlying Theorem 1. Exactly the pure
+3-powers reach the trivial cycle; every other denominator contributes
+exactly \(0\) (no partial collapse was observed anywhere in range).}
+\label{tab:collapse}
+\end{table}
+
+Further verified facts used above:
+\begin{itemize}
+  \item \(d' \mid 2^{L} - 3^{M}\) and \(2^{L} > 3^{M}\) for all \(1095\) cycles;
+        \(L/M \ge 1.6000 > \log_2 3\).
+  \item All cycles have a single home denominator (Lemma~\ref{lem:nonmixing}),
+        and \(3 \nmid d'\) for every one of them (Corollary~\ref{cor:threefree}).
+  \item 148 cycles satisfy \(d' = 2^{L} - 3^{M}\) (\emph{minimal-gap}); 136 of
+        them are primitive, 12 are latent (Section \ref{sec:latent}).
+  \item 23 of 1095 cycles are latent (first reachable only from \(3^{k} d'\),
+        \(k \ge 1\)); all latent scan levels have the form \(3^{k} d'\) with
+        \(3 \nmid d'\). In the \(d \le 1001\) scan, first appearances satisfy
+        \(k \le 3\) (\(k=1\): 17, \(k=2\): 5, \(k=3\): 1) — but this bound is a
+        cap artifact, not a dynamical one; see Section \ref{sec:latent}.
+  \item Exhaustive \(3^{k}d'\) sweep (\(k \le 8\)) over 46 distinct home
+        denominators (12 latent homes, 20 further primes \(< 200\), 19
+        minimal-gap-only homes, with 5 of those also among the 20 primes;
+        \(\sim\!1.7 \times 10^{7}\) orbits): 35
+        \emph{new} cycles were found that no scan at level \(\le 1001\) can
+        reach (first appearances at \(k = 1,\dots,8\)); 12 of them are
+        minimal-gap, all latent, with first appearances as large as \(k = 7\).
+        Every registry cycle homed at a swept \(d'\) was recovered (0 misses),
+        and every mixed-denominator cycle check came back clean.
+\end{itemize}
+
+\subsection{Latent cycles and minimality of \(k\)}\label{sec:latent}
+A cycle homed at \(d'\) is \emph{latent} if no reduced \(a/d'\) enters it; it
+appears only at levels \(3^{k} d'\), \(k \ge 1\). All 23 latent cycles (over 12
+home denominators) appear at level \(3^{k} d'\); this is exactly the phenomenon
+that Lemma~\ref{lem:three} predicts: reachability of a given residue class
+\(\bmod d'\) expands as the orbit sheds factors of \(3\), so the set of cycles
+homed at \(d'\) reachable from \(a/3^{k}d'\) is non-decreasing in \(k\).
+The \(k \le 8\) sweep shows the reachable set stabilizes for 44 of the 46 swept
+denominators (typically \(k_{\max} \le 4\)), but \(\mathbf{not}\) universally:
+\(d' = 71\) adds exactly one new cycle at every level \(5 \le k \le 8\), and
+\(d' = 5\) adds cycles at \(k = 3, 7, 8\) — so \(k_{\min}\) can exceed 3 (largest
+observed: \(k_{\min} = 8\), \(d' = 71\)), and finite saturation is an
+\emph{empirical} regularity, not a theorem, in the tested range.
+Data: \texttt{scan\_field.json}, aggregated in \texttt{aggregate\_out.txt}.
+
+\section{Formalization roadmap}
+\begin{enumerate}
+  \item \emph{Lemma~\ref{lem:non3}} and \emph{Lemma~\ref{lem:three}} are
+        one-line \texttt{gcd} computations; fully automatable in Lean~4 /
+        Isabelle (\texttt{Nat.gcd}, \texttt{padicValNat}).
+  \item \emph{Lemma~\ref{lem:nonmixing}} follows from the two valuations being
+        non-increasing along cycles; encode as a monotone-map-on-a-cycle
+        lemma.
+  \item \emph{Theorem 1(iii)}: the finite check for \(k \le 6\) can be replayed
+        by computation (\texttt{native\_decide}/\texttt{by omega} over
+        \(2\cdot(3^{6}-1)/2 = 728\) fractions), reducing the theorem to the
+        integer Collatz problem on explicit boxes.
+  \item \emph{Cycle classification} (Lemma~\ref{lem:cycle}): given \(d'\), the
+        condition \(2^{L} \equiv 3^{M} \pmod{d'}\) is decidable per \((L,M)\)
+        and yields a finite enumeration of candidate cycles per \(d'\).
+\end{enumerate}
+
+\begin{remark}[scope of this draft]
+This is a proof \emph{structure}: Lemmas are stated with their argument
+skeletons and are meant to be expanded into full proofs; part (iii) rests on
+an explicitly stated finite verification, not on a fully closed argument.
+\end{remark}
+
+\section*{Acknowledgments}
+Experiments in this work were run and tracked with OpenResearch~\citep{openresearch}.
+
+\begin{thebibliography}{9}
+\bibitem[Terras(1976)]{teras1976} R.~Terras. A stopping time problem on the
+  positive integers. \emph{Acta Arithmetica} 30:241--252, 1976.
+\bibitem[Lagarias(2010)]{lagarias2010} J.~C. Lagarias (ed.). \emph{The
+  3x+1 Problem and Its Generalizations}. American Mathematical Society,
+  2010.
+\bibitem[Tao(2019)]{tao2019} T.~Tao. Almost all orbits of the Collatz map
+  attain almost bounded values. \emph{Forum of Mathematics, Pi} 10:e12,
+  2022. arXiv:1909.03562.
+\bibitem[alphaXiv(2026)]{openresearch} alphaXiv. OpenResearch: The
+  local-first harness and workspace for research agents. 2026.
+  \url{https://github.com/alphaXiv/OpenResearch}.
+\end{thebibliography}
+
+\end{document}

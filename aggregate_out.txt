@@ -1,0 +1,728 @@
+
+=== d' = 1  (k = 0..8) ===
+  k=0 D=1         orbits=0        homed=0        distinct=0 mixed=0 wall=0.0s
+  k=1 D=3         orbits=2        homed=2        distinct=1 mixed=0 wall=0.0s
+  k=2 D=9         orbits=6        homed=6        distinct=1 mixed=0 wall=0.0s
+  k=3 D=27        orbits=18       homed=18       distinct=1 mixed=0 wall=0.0s
+  k=4 D=81        orbits=54       homed=54       distinct=1 mixed=0 wall=0.0s
+  k=5 D=243       orbits=162      homed=162      distinct=1 mixed=0 wall=0.0s
+  k=6 D=729       orbits=486      homed=486      distinct=1 mixed=0 wall=0.0s
+  k=7 D=2187      orbits=1458     homed=1458     distinct=1 mixed=0 wall=0.1s
+  k=8 D=6561      orbits=4374     homed=4374     distinct=1 mixed=0 wall=0.3s
+  -> reachable-up-to-k distinct cycles: 1  (registry homed at d': 1)
+  k_max(d') = 1  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:0, 1:1, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 3  (k = 0..8) ===
+  k=0 D=3         orbits=2        homed=0        distinct=0 mixed=0 wall=0.0s
+  k=1 D=9         orbits=6        homed=0        distinct=0 mixed=0 wall=0.0s
+  k=2 D=27        orbits=18       homed=0        distinct=0 mixed=0 wall=0.0s
+  k=3 D=81        orbits=54       homed=0        distinct=0 mixed=0 wall=0.0s
+  k=4 D=243       orbits=162      homed=0        distinct=0 mixed=0 wall=0.0s
+  k=5 D=729       orbits=486      homed=0        distinct=0 mixed=0 wall=0.0s
+  k=6 D=2187      orbits=1458     homed=0        distinct=0 mixed=0 wall=0.0s
+  k=7 D=6561      orbits=4374     homed=0        distinct=0 mixed=0 wall=0.1s
+  k=8 D=19683     orbits=13122    homed=0        distinct=0 mixed=0 wall=0.6s
+  -> reachable-up-to-k distinct cycles: 0  (registry homed at d': 0)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:0, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 5  (k = 0..8) ===
+  k=0 D=5         orbits=4        homed=4        distinct=2 mixed=0 wall=0.0s
+  k=1 D=15        orbits=8        homed=8        distinct=2 mixed=0 wall=0.0s
+  k=2 D=45        orbits=24       homed=24       distinct=2 mixed=0 wall=0.0s
+  k=3 D=135       orbits=72       homed=72       distinct=3 mixed=0 wall=0.0s
+  k=4 D=405       orbits=216      homed=216      distinct=3 mixed=0 wall=0.0s
+  k=5 D=1215      orbits=648      homed=648      distinct=3 mixed=0 wall=0.0s
+  k=6 D=3645      orbits=1944     homed=1944     distinct=3 mixed=0 wall=0.1s
+  k=7 D=10935     orbits=5832     homed=5832     distinct=4 mixed=0 wall=0.4s
+  k=8 D=32805     orbits=17496    homed=17496    distinct=5 mixed=0 wall=1.0s
+  -> reachable-up-to-k distinct cycles: 5  (registry homed at d': 3)
+  k_max(d') = 8  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:2, 1:0, 2:0, 3:1, 4:0, 5:0, 6:0, 7:1, 8:1
+  NEW cycles (beyond d<=1001 registry): 2
+    example: [(187, 5), (283, 5), (374, 5), (427, 5), (566, 5), (587, 5), (643, 5), (748, 5), (781, 5), (854, 5), (883, 5), (967, 5),...
+    example: [(347, 5), (359, 5), (407, 5), (461, 5), (523, 5), (541, 5), (613, 5), (667, 5), (694, 5), (718, 5), (787, 5), (814, 5),...
+  all registry d'-homed cycles reached
+
+=== d' = 7  (k = 0..8) ===
+  k=0 D=7         orbits=6        homed=6        distinct=1 mixed=0 wall=0.0s
+  k=1 D=21        orbits=12       homed=12       distinct=1 mixed=0 wall=0.0s
+  k=2 D=63        orbits=36       homed=36       distinct=1 mixed=0 wall=0.0s
+  k=3 D=189       orbits=108      homed=108      distinct=1 mixed=0 wall=0.0s
+  k=4 D=567       orbits=324      homed=324      distinct=1 mixed=0 wall=0.0s
+  k=5 D=1701      orbits=972      homed=972      distinct=1 mixed=0 wall=0.0s
+  k=6 D=5103      orbits=2916     homed=2916     distinct=1 mixed=0 wall=0.1s
+  k=7 D=15309     orbits=8748     homed=8748     distinct=1 mixed=0 wall=0.4s
+  k=8 D=45927     orbits=26244    homed=26244    distinct=1 mixed=0 wall=1.5s
+  -> reachable-up-to-k distinct cycles: 1  (registry homed at d': 1)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:1, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 11  (k = 0..8) ===
+  k=0 D=11        orbits=10       homed=10       distinct=2 mixed=0 wall=0.0s
+  k=1 D=33        orbits=20       homed=20       distinct=2 mixed=0 wall=0.0s
+  k=2 D=99        orbits=60       homed=60       distinct=2 mixed=0 wall=0.0s
+  k=3 D=297       orbits=180      homed=180      distinct=2 mixed=0 wall=0.0s
+  k=4 D=891       orbits=540      homed=540      distinct=2 mixed=0 wall=0.0s
+  k=5 D=2673      orbits=1620     homed=1620     distinct=2 mixed=0 wall=0.1s
+  k=6 D=8019      orbits=4860     homed=4860     distinct=2 mixed=0 wall=0.3s
+  k=7 D=24057     orbits=14580    homed=14580    distinct=2 mixed=0 wall=1.1s
+  k=8 D=72171     orbits=43740    homed=43740    distinct=2 mixed=0 wall=3.3s
+  -> reachable-up-to-k distinct cycles: 2  (registry homed at d': 2)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:2, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 13  (k = 0..8) ===
+  k=0 D=13        orbits=12       homed=12       distinct=1 mixed=0 wall=0.0s
+  k=1 D=39        orbits=24       homed=24       distinct=2 mixed=0 wall=0.0s
+  k=2 D=117       orbits=72       homed=72       distinct=2 mixed=0 wall=0.0s
+  k=3 D=351       orbits=216      homed=216      distinct=2 mixed=0 wall=0.0s
+  k=4 D=1053      orbits=648      homed=648      distinct=3 mixed=0 wall=0.0s
+  k=5 D=3159      orbits=1944     homed=1944     distinct=7 mixed=0 wall=0.1s
+  k=6 D=9477      orbits=5832     homed=5832     distinct=8 mixed=0 wall=0.3s
+  k=7 D=28431     orbits=17496    homed=17496    distinct=9 mixed=0 wall=1.7s
+  k=8 D=85293     orbits=52488    homed=52488    distinct=9 mixed=0 wall=3.9s
+  -> reachable-up-to-k distinct cycles: 9  (registry homed at d': 2)
+  k_max(d') = 7  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:1, 1:1, 2:0, 3:0, 4:1, 5:4, 6:1, 7:1, 8:0
+  NEW cycles (beyond d<=1001 registry): 7
+    example: [(319, 13), (367, 13), (421, 13), (485, 13), (557, 13), (638, 13), (734, 13), (842, 13), (970, 13), (1114, 13), (1276, 1...
+    example: [(287, 13), (331, 13), (437, 13), (503, 13), (574, 13), (662, 13), (761, 13), (874, 13), (1006, 13), (1148, 13), (1324, ...
+    example: [(259, 13), (341, 13), (395, 13), (518, 13), (599, 13), (682, 13), (790, 13), (905, 13), (1036, 13), (1198, 13), (1364, ...
+    example: [(227, 13), (347, 13), (454, 13), (527, 13), (601, 13), (694, 13), (797, 13), (908, 13), (1054, 13), (1202, 13), (1594, ...
+    example: [(283, 13), (373, 13), (431, 13), (493, 13), (566, 13), (653, 13), (746, 13), (862, 13), (986, 13), (1132, 13), (1306, 1...
+    example: [(211, 13), (323, 13), (422, 13), (491, 13), (646, 13), (743, 13), (844, 13), (982, 13), (1121, 13), (1486, 13), (1688, ...
+    example: [(251, 13), (383, 13), (439, 13), (502, 13), (581, 13), (665, 13), (766, 13), (878, 13), (1004, 13), (1162, 13), (1330, ...
+  all registry d'-homed cycles reached
+
+=== d' = 17  (k = 0..8) ===
+  k=0 D=17        orbits=16       homed=16       distinct=2 mixed=0 wall=0.0s
+  k=1 D=51        orbits=32       homed=32       distinct=2 mixed=0 wall=0.0s
+  k=2 D=153       orbits=96       homed=96       distinct=2 mixed=0 wall=0.0s
+  k=3 D=459       orbits=288      homed=288      distinct=2 mixed=0 wall=0.0s
+  k=4 D=1377      orbits=864      homed=864      distinct=2 mixed=0 wall=0.1s
+  k=5 D=4131      orbits=2592     homed=2592     distinct=2 mixed=0 wall=0.2s
+  k=6 D=12393     orbits=7776     homed=7776     distinct=2 mixed=0 wall=0.6s
+  k=7 D=37179     orbits=23328    homed=23328    distinct=2 mixed=0 wall=1.7s
+  k=8 D=111537    orbits=69984    homed=69984    distinct=2 mixed=0 wall=5.4s
+  -> reachable-up-to-k distinct cycles: 2  (registry homed at d': 2)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:2, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 19  (k = 0..8) ===
+  k=0 D=19        orbits=18       homed=18       distinct=1 mixed=0 wall=0.0s
+  k=1 D=57        orbits=36       homed=36       distinct=1 mixed=0 wall=0.0s
+  k=2 D=171       orbits=108      homed=108      distinct=1 mixed=0 wall=0.0s
+  k=3 D=513       orbits=324      homed=324      distinct=1 mixed=0 wall=0.0s
+  k=4 D=1539      orbits=972      homed=972      distinct=1 mixed=0 wall=0.1s
+  k=5 D=4617      orbits=2916     homed=2916     distinct=1 mixed=0 wall=0.2s
+  k=6 D=13851     orbits=8748     homed=8748     distinct=1 mixed=0 wall=0.6s
+  k=7 D=41553     orbits=26244    homed=26244    distinct=1 mixed=0 wall=1.8s
+  k=8 D=124659    orbits=78732    homed=78732    distinct=1 mixed=0 wall=5.8s
+  -> reachable-up-to-k distinct cycles: 1  (registry homed at d': 1)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:1, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 23  (k = 0..8) ===
+  k=0 D=23        orbits=22       homed=22       distinct=3 mixed=0 wall=0.0s
+  k=1 D=69        orbits=44       homed=44       distinct=3 mixed=0 wall=0.0s
+  k=2 D=207       orbits=132      homed=132      distinct=3 mixed=0 wall=0.0s
+  k=3 D=621       orbits=396      homed=396      distinct=3 mixed=0 wall=0.1s
+  k=4 D=1863      orbits=1188     homed=1188     distinct=3 mixed=0 wall=0.2s
+  k=5 D=5589      orbits=3564     homed=3564     distinct=3 mixed=0 wall=0.3s
+  k=6 D=16767     orbits=10692    homed=10692    distinct=3 mixed=0 wall=0.9s
+  k=7 D=50301     orbits=32076    homed=32076    distinct=3 mixed=0 wall=7.1s
+  k=8 D=150903    orbits=96228    homed=96228    distinct=3 mixed=0 wall=9.4s
+  -> reachable-up-to-k distinct cycles: 3  (registry homed at d': 3)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:3, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 29  (k = 0..8) ===
+  k=0 D=29        orbits=28       homed=28       distinct=2 mixed=0 wall=0.0s
+  k=1 D=87        orbits=56       homed=56       distinct=2 mixed=0 wall=0.0s
+  k=2 D=261       orbits=168      homed=168      distinct=2 mixed=0 wall=0.0s
+  k=3 D=783       orbits=504      homed=504      distinct=2 mixed=0 wall=0.0s
+  k=4 D=2349      orbits=1512     homed=1512     distinct=2 mixed=0 wall=0.1s
+  k=5 D=7047      orbits=4536     homed=4536     distinct=2 mixed=0 wall=0.3s
+  k=6 D=21141     orbits=13608    homed=13608    distinct=2 mixed=0 wall=1.0s
+  k=7 D=63423     orbits=40824    homed=40824    distinct=2 mixed=0 wall=4.0s
+  k=8 D=190269    orbits=122472   homed=122472   distinct=2 mixed=0 wall=10.7s
+  -> reachable-up-to-k distinct cycles: 2  (registry homed at d': 2)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:2, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 31  (k = 0..8) ===
+  k=0 D=31        orbits=30       homed=30       distinct=1 mixed=0 wall=0.0s
+  k=1 D=93        orbits=60       homed=60       distinct=1 mixed=0 wall=0.0s
+  k=2 D=279       orbits=180      homed=180      distinct=1 mixed=0 wall=0.0s
+  k=3 D=837       orbits=540      homed=540      distinct=1 mixed=0 wall=0.1s
+  k=4 D=2511      orbits=1620     homed=1620     distinct=1 mixed=0 wall=0.3s
+  k=5 D=7533      orbits=4860     homed=4860     distinct=1 mixed=0 wall=1.0s
+  k=6 D=22599     orbits=14580    homed=14580    distinct=1 mixed=0 wall=1.7s
+  k=7 D=67797     orbits=43740    homed=43740    distinct=1 mixed=0 wall=8.8s
+  k=8 D=203391    orbits=131220   homed=131220   distinct=1 mixed=0 wall=11.7s
+  -> reachable-up-to-k distinct cycles: 1  (registry homed at d': 1)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:1, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 37  (k = 0..8) ===
+  k=0 D=37        orbits=36       homed=36       distinct=3 mixed=0 wall=0.0s
+  k=1 D=111       orbits=72       homed=72       distinct=3 mixed=0 wall=0.0s
+  k=2 D=333       orbits=216      homed=216      distinct=3 mixed=0 wall=0.0s
+  k=3 D=999       orbits=648      homed=648      distinct=3 mixed=0 wall=0.0s
+  k=4 D=2997      orbits=1944     homed=1944     distinct=3 mixed=0 wall=0.1s
+  k=5 D=8991      orbits=5832     homed=5832     distinct=3 mixed=0 wall=0.4s
+  k=6 D=26973     orbits=17496    homed=17496    distinct=3 mixed=0 wall=1.2s
+  k=7 D=80919     orbits=52488    homed=52488    distinct=3 mixed=0 wall=4.4s
+  k=8 D=242757    orbits=157464   homed=157464   distinct=3 mixed=0 wall=13.0s
+  -> reachable-up-to-k distinct cycles: 3  (registry homed at d': 3)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:3, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 41  (k = 0..8) ===
+  k=0 D=41        orbits=40       homed=40       distinct=1 mixed=0 wall=0.0s
+  k=1 D=123       orbits=80       homed=80       distinct=1 mixed=0 wall=0.0s
+  k=2 D=369       orbits=240      homed=240      distinct=1 mixed=0 wall=0.0s
+  k=3 D=1107      orbits=720      homed=720      distinct=1 mixed=0 wall=0.0s
+  k=4 D=3321      orbits=2160     homed=2160     distinct=1 mixed=0 wall=0.1s
+  k=5 D=9963      orbits=6480     homed=6480     distinct=1 mixed=0 wall=0.3s
+  k=6 D=29889     orbits=19440    homed=19440    distinct=1 mixed=0 wall=2.0s
+  k=7 D=89667     orbits=58320    homed=58320    distinct=1 mixed=0 wall=3.5s
+  k=8 D=269001    orbits=174960   homed=174960   distinct=1 mixed=0 wall=22.8s
+  -> reachable-up-to-k distinct cycles: 1  (registry homed at d': 1)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:1, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 43  (k = 0..8) ===
+  k=0 D=43        orbits=42       homed=42       distinct=1 mixed=0 wall=0.0s
+  k=1 D=129       orbits=84       homed=84       distinct=1 mixed=0 wall=0.0s
+  k=2 D=387       orbits=252      homed=252      distinct=1 mixed=0 wall=0.1s
+  k=3 D=1161      orbits=756      homed=756      distinct=1 mixed=0 wall=0.1s
+  k=4 D=3483      orbits=2268     homed=2268     distinct=1 mixed=0 wall=0.5s
+  k=5 D=10449     orbits=6804     homed=6804     distinct=1 mixed=0 wall=1.8s
+  k=6 D=31347     orbits=20412    homed=20412    distinct=1 mixed=0 wall=2.1s
+  k=7 D=94041     orbits=61236    homed=61236    distinct=1 mixed=0 wall=8.7s
+  k=8 D=282123    orbits=183708   homed=183708   distinct=1 mixed=0 wall=41.3s
+  -> reachable-up-to-k distinct cycles: 1  (registry homed at d': 1)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:1, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 47  (k = 0..8) ===
+  k=0 D=47        orbits=46       homed=46       distinct=6 mixed=0 wall=0.0s
+  k=1 D=141       orbits=92       homed=92       distinct=6 mixed=0 wall=0.0s
+  k=2 D=423       orbits=276      homed=276      distinct=7 mixed=0 wall=0.0s
+  k=3 D=1269      orbits=828      homed=828      distinct=7 mixed=0 wall=0.1s
+  k=4 D=3807      orbits=2484     homed=2484     distinct=7 mixed=0 wall=0.3s
+  k=5 D=11421     orbits=7452     homed=7452     distinct=7 mixed=0 wall=0.5s
+  k=6 D=34263     orbits=22356    homed=22356    distinct=7 mixed=0 wall=1.4s
+  k=7 D=102789    orbits=67068    homed=67068    distinct=7 mixed=0 wall=5.4s
+  k=8 D=308367    orbits=201204   homed=201204   distinct=7 mixed=0 wall=14.9s
+  -> reachable-up-to-k distinct cycles: 7  (registry homed at d': 7)
+  k_max(d') = 2  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:6, 1:0, 2:1, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 53  (k = 0..8) ===
+  k=0 D=53        orbits=52       homed=52       distinct=1 mixed=0 wall=0.0s
+  k=1 D=159       orbits=104      homed=104      distinct=1 mixed=0 wall=0.0s
+  k=2 D=477       orbits=312      homed=312      distinct=1 mixed=0 wall=0.0s
+  k=3 D=1431      orbits=936      homed=936      distinct=1 mixed=0 wall=0.1s
+  k=4 D=4293      orbits=2808     homed=2808     distinct=1 mixed=0 wall=0.2s
+  k=5 D=12879     orbits=8424     homed=8424     distinct=1 mixed=0 wall=0.6s
+  k=6 D=38637     orbits=25272    homed=25272    distinct=1 mixed=0 wall=2.5s
+  k=7 D=115911    orbits=75816    homed=75816    distinct=1 mixed=0 wall=10.2s
+  k=8 D=347733    orbits=227448   homed=227448   distinct=1 mixed=0 wall=29.0s
+  -> reachable-up-to-k distinct cycles: 1  (registry homed at d': 1)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:1, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 55  (k = 0..6) ===
+  k=0 D=55        orbits=40       homed=40       distinct=3 mixed=0 wall=0.0s
+  k=1 D=165       orbits=80       homed=80       distinct=3 mixed=0 wall=0.0s
+  k=2 D=495       orbits=240      homed=240      distinct=3 mixed=0 wall=0.0s
+  k=3 D=1485      orbits=720      homed=720      distinct=3 mixed=0 wall=0.0s
+  k=4 D=4455      orbits=2160     homed=2160     distinct=3 mixed=0 wall=0.1s
+  k=5 D=13365     orbits=6480     homed=6480     distinct=3 mixed=0 wall=0.5s
+  k=6 D=40095     orbits=19440    homed=19440    distinct=3 mixed=0 wall=1.6s
+  -> reachable-up-to-k distinct cycles: 3  (registry homed at d': 3)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:3, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 59  (k = 0..8) ===
+  k=0 D=59        orbits=58       homed=58       distinct=3 mixed=0 wall=0.0s
+  k=1 D=177       orbits=116      homed=116      distinct=4 mixed=0 wall=0.0s
+  k=2 D=531       orbits=348      homed=348      distinct=6 mixed=0 wall=0.0s
+  k=3 D=1593      orbits=1044     homed=1044     distinct=7 mixed=0 wall=0.1s
+  k=4 D=4779      orbits=3132     homed=3132     distinct=7 mixed=0 wall=0.3s
+  k=5 D=14337     orbits=9396     homed=9396     distinct=7 mixed=0 wall=1.1s
+  k=6 D=43011     orbits=28188    homed=28188    distinct=7 mixed=0 wall=3.2s
+  k=7 D=129033    orbits=84564    homed=84564    distinct=7 mixed=0 wall=9.5s
+  k=8 D=387099    orbits=253692   homed=253692   distinct=7 mixed=0 wall=24.3s
+  -> reachable-up-to-k distinct cycles: 7  (registry homed at d': 6)
+  k_max(d') = 3  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:3, 1:1, 2:2, 3:1, 4:0, 5:0, 6:0, 7:0, 8:0
+  NEW cycles (beyond d<=1001 registry): 1
+    example: [(221, 59), (275, 59), (347, 59), (361, 59), (442, 59), (443, 59), (550, 59), (571, 59), (694, 59), (722, 59), (884, 59)...
+  all registry d'-homed cycles reached
+
+=== d' = 61  (k = 0..8) ===
+  k=0 D=61        orbits=60       homed=60       distinct=1 mixed=0 wall=0.0s
+  k=1 D=183       orbits=120      homed=120      distinct=1 mixed=0 wall=0.0s
+  k=2 D=549       orbits=360      homed=360      distinct=2 mixed=0 wall=0.1s
+  k=3 D=1647      orbits=1080     homed=1080     distinct=2 mixed=0 wall=0.1s
+  k=4 D=4941      orbits=3240     homed=3240     distinct=2 mixed=0 wall=0.5s
+  k=5 D=14823     orbits=9720     homed=9720     distinct=2 mixed=0 wall=0.9s
+  k=6 D=44469     orbits=29160    homed=29160    distinct=2 mixed=0 wall=3.0s
+  k=7 D=133407    orbits=87480    homed=87480    distinct=2 mixed=0 wall=9.3s
+  k=8 D=400221    orbits=262440   homed=262440   distinct=2 mixed=0 wall=50.5s
+  -> reachable-up-to-k distinct cycles: 2  (registry homed at d': 2)
+  k_max(d') = 2  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:1, 1:0, 2:1, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 67  (k = 0..8) ===
+  k=0 D=67        orbits=66       homed=66       distinct=1 mixed=0 wall=0.0s
+  k=1 D=201       orbits=132      homed=132      distinct=1 mixed=0 wall=0.0s
+  k=2 D=603       orbits=396      homed=396      distinct=1 mixed=0 wall=0.0s
+  k=3 D=1809      orbits=1188     homed=1188     distinct=1 mixed=0 wall=0.1s
+  k=4 D=5427      orbits=3564     homed=3564     distinct=1 mixed=0 wall=0.3s
+  k=5 D=16281     orbits=10692    homed=10692    distinct=1 mixed=0 wall=2.3s
+  k=6 D=48843     orbits=32076    homed=32076    distinct=1 mixed=0 wall=7.1s
+  k=7 D=146529    orbits=96228    homed=96228    distinct=1 mixed=0 wall=16.3s
+  k=8 D=439587    orbits=288684   homed=288684   distinct=1 mixed=0 wall=55.8s
+  -> reachable-up-to-k distinct cycles: 1  (registry homed at d': 1)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:1, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 71  (k = 0..8) ===
+  k=0 D=71        orbits=70       homed=70       distinct=2 mixed=0 wall=0.0s
+  k=1 D=213       orbits=140      homed=140      distinct=2 mixed=0 wall=0.0s
+  k=2 D=639       orbits=420      homed=420      distinct=2 mixed=0 wall=0.0s
+  k=3 D=1917      orbits=1260     homed=1260     distinct=2 mixed=0 wall=0.1s
+  k=4 D=5751      orbits=3780     homed=3780     distinct=2 mixed=0 wall=0.4s
+  k=5 D=17253     orbits=11340    homed=11340    distinct=3 mixed=0 wall=1.7s
+  k=6 D=51759     orbits=34020    homed=34020    distinct=4 mixed=0 wall=3.6s
+  k=7 D=155277    orbits=102060   homed=102060   distinct=5 mixed=0 wall=10.5s
+  k=8 D=465831    orbits=306180   homed=306180   distinct=6 mixed=0 wall=34.6s
+  -> reachable-up-to-k distinct cycles: 6  (registry homed at d': 2)
+  k_max(d') = 8  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:2, 1:0, 2:0, 3:0, 4:0, 5:1, 6:1, 7:1, 8:1
+  NEW cycles (beyond d<=1001 registry): 4
+    example: [(2809, 71), (4249, 71), (5618, 71), (6409, 71), (6937, 71), (8498, 71), (9649, 71), (10441, 71), (11236, 71), (12293, 7...
+    example: [(3985, 71), (4673, 71), (6013, 71), (6809, 71), (7045, 71), (7970, 71), (9055, 71), (9346, 71), (10249, 71), (10603, 71...
+    example: [(4409, 71), (5165, 71), (5855, 71), (6061, 71), (6649, 71), (6863, 71), (7783, 71), (8818, 71), (9127, 71), (10009, 71)...
+    example: [(2585, 71), (3913, 71), (5170, 71), (5905, 71), (7826, 71), (8521, 71), (8893, 71), (10049, 71), (10340, 71), (11810, 7...
+  all registry d'-homed cycles reached
+
+=== d' = 73  (k = 0..8) ===
+  k=0 D=73        orbits=72       homed=72       distinct=3 mixed=0 wall=0.0s
+  k=1 D=219       orbits=144      homed=144      distinct=3 mixed=0 wall=0.0s
+  k=2 D=657       orbits=432      homed=432      distinct=3 mixed=0 wall=0.0s
+  k=3 D=1971      orbits=1296     homed=1296     distinct=3 mixed=0 wall=0.1s
+  k=4 D=5913      orbits=3888     homed=3888     distinct=3 mixed=0 wall=0.4s
+  k=5 D=17739     orbits=11664    homed=11664    distinct=3 mixed=0 wall=1.4s
+  k=6 D=53217     orbits=34992    homed=34992    distinct=3 mixed=0 wall=4.5s
+  k=7 D=159651    orbits=104976   homed=104976   distinct=3 mixed=0 wall=17.0s
+  k=8 D=478953    orbits=314928   homed=314928   distinct=3 mixed=0 wall=40.2s
+  -> reachable-up-to-k distinct cycles: 3  (registry homed at d': 3)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:3, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 79  (k = 0..8) ===
+  k=0 D=79        orbits=78       homed=78       distinct=2 mixed=0 wall=0.0s
+  k=1 D=237       orbits=156      homed=156      distinct=3 mixed=0 wall=0.0s
+  k=2 D=711       orbits=468      homed=468      distinct=4 mixed=0 wall=0.1s
+  k=3 D=2133      orbits=1404     homed=1404     distinct=4 mixed=0 wall=0.2s
+  k=4 D=6399      orbits=4212     homed=4212     distinct=4 mixed=0 wall=0.6s
+  k=5 D=19197     orbits=12636    homed=12636    distinct=4 mixed=0 wall=1.7s
+  k=6 D=57591     orbits=37908    homed=37908    distinct=4 mixed=0 wall=6.0s
+  k=7 D=172773    orbits=113724   homed=113724   distinct=4 mixed=0 wall=13.8s
+  k=8 D=518319    orbits=341172   homed=341172   distinct=4 mixed=0 wall=47.4s
+  -> reachable-up-to-k distinct cycles: 4  (registry homed at d': 4)
+  k_max(d') = 2  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:2, 1:1, 2:1, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 83  (k = 0..8) ===
+  k=0 D=83        orbits=82       homed=82       distinct=3 mixed=0 wall=0.0s
+  k=1 D=249       orbits=164      homed=164      distinct=3 mixed=0 wall=0.0s
+  k=2 D=747       orbits=492      homed=492      distinct=3 mixed=0 wall=0.0s
+  k=3 D=2241      orbits=1476     homed=1476     distinct=3 mixed=0 wall=0.1s
+  k=4 D=6723      orbits=4428     homed=4428     distinct=3 mixed=0 wall=0.4s
+  k=5 D=20169     orbits=13284    homed=13284    distinct=3 mixed=0 wall=1.5s
+  k=6 D=60507     orbits=39852    homed=39852    distinct=3 mixed=0 wall=6.0s
+  k=7 D=181521    orbits=119556   homed=119556   distinct=3 mixed=0 wall=12.5s
+  k=8 D=544563    orbits=358668   homed=358668   distinct=3 mixed=0 wall=47.9s
+  -> reachable-up-to-k distinct cycles: 3  (registry homed at d': 3)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:3, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 89  (k = 0..8) ===
+  k=0 D=89        orbits=88       homed=88       distinct=1 mixed=0 wall=0.0s
+  k=1 D=267       orbits=176      homed=176      distinct=1 mixed=0 wall=0.0s
+  k=2 D=801       orbits=528      homed=528      distinct=1 mixed=0 wall=0.1s
+  k=3 D=2403      orbits=1584     homed=1584     distinct=1 mixed=0 wall=0.3s
+  k=4 D=7209      orbits=4752     homed=4752     distinct=1 mixed=0 wall=0.9s
+  k=5 D=21627     orbits=14256    homed=14256    distinct=1 mixed=0 wall=1.3s
+  k=6 D=64881     orbits=42768    homed=42768    distinct=1 mixed=0 wall=4.5s
+  k=7 D=194643    orbits=128304   homed=128304   distinct=1 mixed=0 wall=20.7s
+  k=8 D=583929    orbits=384912   homed=384912   distinct=1 mixed=0 wall=52.5s
+  -> reachable-up-to-k distinct cycles: 1  (registry homed at d': 1)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:1, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 97  (k = 0..8) ===
+  k=0 D=97        orbits=96       homed=96       distinct=2 mixed=0 wall=0.0s
+  k=1 D=291       orbits=192      homed=192      distinct=2 mixed=0 wall=0.0s
+  k=2 D=873       orbits=576      homed=576      distinct=2 mixed=0 wall=0.0s
+  k=3 D=2619      orbits=1728     homed=1728     distinct=2 mixed=0 wall=0.1s
+  k=4 D=7857      orbits=5184     homed=5184     distinct=2 mixed=0 wall=0.3s
+  k=5 D=23571     orbits=15552    homed=15552    distinct=2 mixed=0 wall=1.0s
+  k=6 D=70713     orbits=46656    homed=46656    distinct=2 mixed=0 wall=6.1s
+  k=7 D=212139    orbits=139968   homed=139968   distinct=2 mixed=0 wall=14.1s
+  k=8 D=636417    orbits=419904   homed=419904   distinct=2 mixed=0 wall=46.6s
+  -> reachable-up-to-k distinct cycles: 2  (registry homed at d': 2)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:2, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 101  (k = 0..8) ===
+  k=0 D=101       orbits=100      homed=100      distinct=7 mixed=0 wall=0.0s
+  k=1 D=303       orbits=200      homed=200      distinct=7 mixed=0 wall=0.0s
+  k=2 D=909       orbits=600      homed=600      distinct=7 mixed=0 wall=0.0s
+  k=3 D=2727      orbits=1800     homed=1800     distinct=7 mixed=0 wall=0.1s
+  k=4 D=8181      orbits=5400     homed=5400     distinct=7 mixed=0 wall=0.5s
+  k=5 D=24543     orbits=16200    homed=16200    distinct=7 mixed=0 wall=1.5s
+  k=6 D=73629     orbits=48600    homed=48600    distinct=7 mixed=0 wall=5.3s
+  k=7 D=220887    orbits=145800   homed=145800   distinct=7 mixed=0 wall=16.3s
+  k=8 D=662661    orbits=437400   homed=437400   distinct=7 mixed=0 wall=47.3s
+  -> reachable-up-to-k distinct cycles: 7  (registry homed at d': 7)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:7, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 103  (k = 0..8) ===
+  k=0 D=103       orbits=102      homed=102      distinct=2 mixed=0 wall=0.0s
+  k=1 D=309       orbits=204      homed=204      distinct=2 mixed=0 wall=0.0s
+  k=2 D=927       orbits=612      homed=612      distinct=2 mixed=0 wall=0.1s
+  k=3 D=2781      orbits=1836     homed=1836     distinct=2 mixed=0 wall=0.2s
+  k=4 D=8343      orbits=5508     homed=5508     distinct=2 mixed=0 wall=0.7s
+  k=5 D=25029     orbits=16524    homed=16524    distinct=2 mixed=0 wall=2.6s
+  k=6 D=75087     orbits=49572    homed=49572    distinct=2 mixed=0 wall=17.5s
+  k=7 D=225261    orbits=148716   homed=148716   distinct=2 mixed=0 wall=27.1s
+  k=8 D=675783    orbits=446148   homed=446148   distinct=2 mixed=0 wall=65.6s
+  -> reachable-up-to-k distinct cycles: 2  (registry homed at d': 2)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:2, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 119  (k = 0..6) ===
+  k=0 D=119       orbits=96       homed=96       distinct=5 mixed=0 wall=0.0s
+  k=1 D=357       orbits=192      homed=192      distinct=5 mixed=0 wall=0.0s
+  k=2 D=1071      orbits=576      homed=576      distinct=5 mixed=0 wall=0.1s
+  k=3 D=3213      orbits=1728     homed=1728     distinct=5 mixed=0 wall=0.3s
+  k=4 D=9639      orbits=5184     homed=5184     distinct=5 mixed=0 wall=0.9s
+  k=5 D=28917     orbits=15552    homed=15552    distinct=5 mixed=0 wall=2.3s
+  k=6 D=86751     orbits=46656    homed=46656    distinct=5 mixed=0 wall=11.3s
+  -> reachable-up-to-k distinct cycles: 5  (registry homed at d': 5)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:5, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 125  (k = 0..6) ===
+  k=0 D=125       orbits=100      homed=100      distinct=3 mixed=0 wall=0.0s
+  k=1 D=375       orbits=200      homed=200      distinct=3 mixed=0 wall=0.0s
+  k=2 D=1125      orbits=600      homed=600      distinct=4 mixed=0 wall=0.1s
+  k=3 D=3375      orbits=1800     homed=1800     distinct=4 mixed=0 wall=0.3s
+  k=4 D=10125     orbits=5400     homed=5400     distinct=4 mixed=0 wall=0.9s
+  k=5 D=30375     orbits=16200    homed=16200    distinct=4 mixed=0 wall=2.8s
+  k=6 D=91125     orbits=48600    homed=48600    distinct=4 mixed=0 wall=7.6s
+  -> reachable-up-to-k distinct cycles: 4  (registry homed at d': 3)
+  k_max(d') = 2  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:3, 1:0, 2:1, 3:0, 4:0, 5:0, 6:0
+  NEW cycles (beyond d<=1001 registry): 1
+    example: [(899, 125), (1091, 125), (1157, 125), (1411, 125), (1501, 125), (1691, 125), (1699, 125), (1798, 125), (2179, 125), (21...
+  all registry d'-homed cycles reached
+
+=== d' = 137  (k = 0..8) ===
+  k=0 D=137       orbits=136      homed=136      distinct=3 mixed=0 wall=0.0s
+  k=1 D=411       orbits=272      homed=272      distinct=4 mixed=0 wall=0.1s
+  k=2 D=1233      orbits=816      homed=816      distinct=4 mixed=0 wall=0.2s
+  k=3 D=3699      orbits=2448     homed=2448     distinct=5 mixed=0 wall=0.5s
+  k=4 D=11097     orbits=7344     homed=7344     distinct=5 mixed=0 wall=1.5s
+  k=5 D=33291     orbits=22032    homed=22032    distinct=5 mixed=0 wall=3.4s
+  k=6 D=99873     orbits=66096    homed=66096    distinct=5 mixed=0 wall=17.0s
+  k=7 D=299619    orbits=198288   homed=198288   distinct=5 mixed=0 wall=33.8s
+  k=8 D=898857    orbits=594864   homed=594864   distinct=5 mixed=0 wall=104.7s
+  -> reachable-up-to-k distinct cycles: 5  (registry homed at d': 4)
+  k_max(d') = 3  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:3, 1:1, 2:0, 3:1, 4:0, 5:0, 6:0, 7:0, 8:0
+  NEW cycles (beyond d<=1001 registry): 1
+    example: [(743, 137), (1183, 137), (1486, 137), (1687, 137), (1843, 137), (1903, 137), (2159, 137), (2366, 137), (2599, 137), (28...
+  all registry d'-homed cycles reached
+
+=== d' = 175  (k = 0..6) ===
+  k=0 D=175       orbits=120      homed=120      distinct=7 mixed=0 wall=0.0s
+  k=1 D=525       orbits=240      homed=240      distinct=7 mixed=0 wall=0.0s
+  k=2 D=1575      orbits=720      homed=720      distinct=7 mixed=0 wall=0.0s
+  k=3 D=4725      orbits=2160     homed=2160     distinct=7 mixed=0 wall=0.1s
+  k=4 D=14175     orbits=6480     homed=6480     distinct=7 mixed=0 wall=0.5s
+  k=5 D=42525     orbits=19440    homed=19440    distinct=7 mixed=0 wall=1.6s
+  k=6 D=127575    orbits=58320    homed=58320    distinct=7 mixed=0 wall=6.0s
+  -> reachable-up-to-k distinct cycles: 7  (registry homed at d': 7)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:7, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 229  (k = 0..6) ===
+  k=0 D=229       orbits=228      homed=228      distinct=8 mixed=0 wall=0.0s
+  k=1 D=687       orbits=456      homed=456      distinct=8 mixed=0 wall=0.0s
+  k=2 D=2061      orbits=1368     homed=1368     distinct=8 mixed=0 wall=0.1s
+  k=3 D=6183      orbits=4104     homed=4104     distinct=8 mixed=0 wall=0.2s
+  k=4 D=18549     orbits=12312    homed=12312    distinct=8 mixed=0 wall=0.7s
+  k=5 D=55647     orbits=36936    homed=36936    distinct=8 mixed=0 wall=4.3s
+  k=6 D=166941    orbits=110808   homed=110808   distinct=8 mixed=0 wall=10.3s
+  -> reachable-up-to-k distinct cycles: 8  (registry homed at d': 8)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:8, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 233  (k = 0..8) ===
+  k=0 D=233       orbits=232      homed=232      distinct=4 mixed=0 wall=0.1s
+  k=1 D=699       orbits=464      homed=464      distinct=6 mixed=0 wall=0.1s
+  k=2 D=2097      orbits=1392     homed=1392     distinct=12 mixed=0 wall=0.3s
+  k=3 D=6291      orbits=4176     homed=4176     distinct=18 mixed=0 wall=1.3s
+  k=4 D=18873     orbits=12528    homed=12528    distinct=19 mixed=0 wall=3.2s
+  k=5 D=56619     orbits=37584    homed=37584    distinct=19 mixed=0 wall=10.5s
+  k=6 D=169857    orbits=112752   homed=112752   distinct=19 mixed=0 wall=32.5s
+  k=7 D=509571    orbits=338256   homed=338256   distinct=19 mixed=0 wall=86.5s
+  k=8 D=1528713   orbits=1014768  homed=1014768  distinct=19 mixed=0 wall=220.7s
+  -> reachable-up-to-k distinct cycles: 19  (registry homed at d': 6)
+  k_max(d') = 4  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:4, 1:2, 2:6, 3:6, 4:1, 5:0, 6:0, 7:0, 8:0
+  NEW cycles (beyond d<=1001 registry): 13
+    example: [(1367, 233), (1745, 233), (2167, 233), (2249, 233), (2734, 233), (3367, 233), (3490, 233), (4334, 233), (4498, 233), (5...
+    example: [(1175, 233), (1489, 233), (1879, 233), (2350, 233), (2935, 233), (2978, 233), (3758, 233), (4519, 233), (4700, 233), (5...
+    example: [(1159, 233), (1855, 233), (2318, 233), (2899, 233), (3013, 233), (3407, 233), (3710, 233), (4465, 233), (4636, 233), (5...
+    example: [(983, 233), (1591, 233), (1966, 233), (2503, 233), (3182, 233), (3871, 233), (3932, 233), (5006, 233), (5165, 233), (59...
+    example: [(1439, 233), (2087, 233), (2275, 233), (2705, 233), (2878, 233), (3247, 233), (3529, 233), (4174, 233), (4550, 233), (4...
+    example: [(647, 233), (1087, 233), (1294, 233), (1747, 233), (2111, 233), (2174, 233), (2588, 233), (2737, 233), (3283, 233), (33...
+    example: [(1655, 233), (1763, 233), (2129, 233), (2599, 233), (2761, 233), (3310, 233), (3526, 233), (4015, 233), (4258, 233), (5...
+    example: [(1651, 233), (2003, 233), (2399, 233), (2593, 233), (3121, 233), (3302, 233), (3715, 233), (4006, 233), (4325, 233), (4...
+    example: [(1223, 233), (1951, 233), (2446, 233), (2735, 233), (3043, 233), (3569, 233), (3902, 233), (4219, 233), (4681, 233), (4...
+    example: [(1555, 233), (1895, 233), (2449, 233), (2635, 233), (2959, 233), (3110, 233), (3790, 233), (4069, 233), (4555, 233), (4...
+  all registry d'-homed cycles reached
+
+=== d' = 247  (k = 0..6) ===
+  k=0 D=247       orbits=216      homed=216      distinct=6 mixed=0 wall=0.0s
+  k=1 D=741       orbits=432      homed=432      distinct=6 mixed=0 wall=0.0s
+  k=2 D=2223      orbits=1296     homed=1296     distinct=6 mixed=0 wall=0.2s
+  k=3 D=6669      orbits=3888     homed=3888     distinct=6 mixed=0 wall=0.6s
+  k=4 D=20007     orbits=11664    homed=11664    distinct=6 mixed=0 wall=1.9s
+  k=5 D=60021     orbits=34992    homed=34992    distinct=6 mixed=0 wall=5.9s
+  k=6 D=180063    orbits=104976   homed=104976   distinct=6 mixed=0 wall=20.3s
+  -> reachable-up-to-k distinct cycles: 6  (registry homed at d': 6)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:6, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 253  (k = 0..6) ===
+  k=0 D=253       orbits=220      homed=220      distinct=3 mixed=0 wall=0.1s
+  k=1 D=759       orbits=440      homed=440      distinct=3 mixed=0 wall=0.2s
+  k=2 D=2277      orbits=1320     homed=1320     distinct=3 mixed=0 wall=0.4s
+  k=3 D=6831      orbits=3960     homed=3960     distinct=3 mixed=0 wall=1.2s
+  k=4 D=20493     orbits=11880    homed=11880    distinct=3 mixed=0 wall=4.2s
+  k=5 D=61479     orbits=35640    homed=35640    distinct=3 mixed=0 wall=13.3s
+  k=6 D=184437    orbits=106920   homed=106920   distinct=3 mixed=0 wall=31.9s
+  -> reachable-up-to-k distinct cycles: 3  (registry homed at d': 3)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:3, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 269  (k = 0..8) ===
+  k=0 D=269       orbits=268      homed=268      distinct=17 mixed=0 wall=0.0s
+  k=1 D=807       orbits=536      homed=536      distinct=18 mixed=0 wall=0.0s
+  k=2 D=2421      orbits=1608     homed=1608     distinct=18 mixed=0 wall=0.1s
+  k=3 D=7263      orbits=4824     homed=4824     distinct=18 mixed=0 wall=0.4s
+  k=4 D=21789     orbits=14472    homed=14472    distinct=18 mixed=0 wall=1.7s
+  k=5 D=65367     orbits=43416    homed=43416    distinct=18 mixed=0 wall=3.5s
+  k=6 D=196101    orbits=130248   homed=130248   distinct=18 mixed=0 wall=15.6s
+  k=7 D=588303    orbits=390744   homed=390744   distinct=18 mixed=0 wall=47.6s
+  k=8 D=1764909   orbits=1172232  homed=1172232  distinct=18 mixed=0 wall=139.4s
+  -> reachable-up-to-k distinct cycles: 18  (registry homed at d': 18)
+  k_max(d') = 1  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:17, 1:1, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 283  (k = 0..8) ===
+  k=0 D=283       orbits=282      homed=282      distinct=2 mixed=0 wall=0.1s
+  k=1 D=849       orbits=564      homed=564      distinct=3 mixed=0 wall=0.1s
+  k=2 D=2547      orbits=1692     homed=1692     distinct=3 mixed=0 wall=0.3s
+  k=3 D=7641      orbits=5076     homed=5076     distinct=3 mixed=0 wall=1.3s
+  k=4 D=22923     orbits=15228    homed=15228    distinct=3 mixed=0 wall=6.3s
+  k=5 D=68769     orbits=45684    homed=45684    distinct=3 mixed=0 wall=15.4s
+  k=6 D=206307    orbits=137052   homed=137052   distinct=3 mixed=0 wall=51.0s
+  k=7 D=618921    orbits=411156   homed=411156   distinct=3 mixed=0 wall=153.1s
+  k=8 D=1856763   orbits=1233468  homed=1233468  distinct=3 mixed=0 wall=310.1s
+  -> reachable-up-to-k distinct cycles: 3  (registry homed at d': 3)
+  k_max(d') = 1  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:2, 1:1, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 295  (k = 0..8) ===
+  k=0 D=295       orbits=232      homed=232      distinct=4 mixed=0 wall=0.0s
+  k=1 D=885       orbits=464      homed=464      distinct=12 mixed=0 wall=0.1s
+  k=2 D=2655      orbits=1392     homed=1392     distinct=16 mixed=0 wall=0.3s
+  k=3 D=7965      orbits=4176     homed=4176     distinct=17 mixed=0 wall=0.9s
+  k=4 D=23895     orbits=12528    homed=12528    distinct=17 mixed=0 wall=2.0s
+  k=5 D=71685     orbits=37584    homed=37584    distinct=17 mixed=0 wall=5.8s
+  k=6 D=215055    orbits=112752   homed=112752   distinct=17 mixed=0 wall=18.1s
+  k=7 D=645165    orbits=338256   homed=338256   distinct=17 mixed=0 wall=57.0s
+  k=8 D=1935495   orbits=1014768  homed=1014768  distinct=17 mixed=0 wall=156.7s
+  -> reachable-up-to-k distinct cycles: 17  (registry homed at d': 12)
+  k_max(d') = 3  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:4, 1:8, 2:4, 3:1, 4:0, 5:0, 6:0, 7:0, 8:0
+  NEW cycles (beyond d<=1001 registry): 5
+    example: [(817, 295), (1373, 295), (1634, 295), (1729, 295), (2207, 295), (2741, 295), (2746, 295), (3268, 295), (3458, 295), (42...
+    example: [(937, 295), (1151, 295), (1553, 295), (1874, 295), (2302, 295), (2477, 295), (2971, 295), (3106, 295), (3748, 295), (38...
+    example: [(1009, 295), (1247, 295), (1661, 295), (2018, 295), (2053, 295), (2494, 295), (2639, 295), (3227, 295), (3322, 295), (4...
+    example: [(1213, 295), (1519, 295), (1549, 295), (1927, 295), (1967, 295), (2426, 295), (2471, 295), (3038, 295), (3098, 295), (3...
+    example: [(697, 295), (1193, 295), (1394, 295), (1937, 295), (2386, 295), (2788, 295), (3053, 295), (3619, 295), (3874, 295), (47...
+  all registry d'-homed cycles reached
+
+=== d' = 431  (k = 0..4) ===
+  k=0 D=431       orbits=430      homed=430      distinct=22 mixed=0 wall=0.0s
+  k=1 D=1293      orbits=860      homed=860      distinct=23 mixed=0 wall=0.1s
+  k=2 D=3879      orbits=2580     homed=2580     distinct=23 mixed=0 wall=0.3s
+  k=3 D=11637     orbits=7740     homed=7740     distinct=23 mixed=0 wall=0.6s
+  k=4 D=34911     orbits=23220    homed=23220    distinct=23 mixed=0 wall=2.1s
+  -> reachable-up-to-k distinct cycles: 23  (registry homed at d': 22)
+  k_max(d') = 1  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:22, 1:1, 2:0, 3:0, 4:0
+  NEW cycles (beyond d<=1001 registry): 1
+    example: [(737, 431), (809, 431), (935, 431), (1321, 431), (1429, 431), (1474, 431), (1618, 431), (1870, 431), (1877, 431), (2197...
+  all registry d'-homed cycles reached
+
+=== d' = 485  (k = 0..4) ===
+  k=0 D=485       orbits=384      homed=384      distinct=15 mixed=0 wall=0.0s
+  k=1 D=1455      orbits=768      homed=768      distinct=15 mixed=0 wall=0.1s
+  k=2 D=4365      orbits=2304     homed=2304     distinct=15 mixed=0 wall=0.5s
+  k=3 D=13095     orbits=6912     homed=6912     distinct=15 mixed=0 wall=1.0s
+  k=4 D=39285     orbits=20736    homed=20736    distinct=15 mixed=0 wall=3.8s
+  -> reachable-up-to-k distinct cycles: 15  (registry homed at d': 15)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:15, 1:0, 2:0, 3:0, 4:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 503  (k = 0..4) ===
+  k=0 D=503       orbits=502      homed=502      distinct=7 mixed=0 wall=0.1s
+  k=1 D=1509      orbits=1004     homed=1004     distinct=7 mixed=0 wall=0.3s
+  k=2 D=4527      orbits=3012     homed=3012     distinct=7 mixed=0 wall=1.1s
+  k=3 D=13581     orbits=9036     homed=9036     distinct=7 mixed=0 wall=2.2s
+  k=4 D=40743     orbits=27108    homed=27108    distinct=7 mixed=0 wall=7.8s
+  -> reachable-up-to-k distinct cycles: 7  (registry homed at d': 7)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:7, 1:0, 2:0, 3:0, 4:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 509  (k = 0..4) ===
+  k=0 D=509       orbits=508      homed=508      distinct=2 mixed=0 wall=0.5s
+  k=1 D=1527      orbits=1016     homed=1016     distinct=2 mixed=0 wall=0.7s
+  k=2 D=4581      orbits=3048     homed=3048     distinct=2 mixed=0 wall=2.3s
+  k=3 D=13743     orbits=9144     homed=9144     distinct=2 mixed=0 wall=7.0s
+  k=4 D=41229     orbits=27432    homed=27432    distinct=2 mixed=0 wall=17.5s
+  -> reachable-up-to-k distinct cycles: 2  (registry homed at d': 2)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:2, 1:0, 2:0, 3:0, 4:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 781  (k = 0..4) ===
+  k=0 D=781       orbits=700      homed=700      distinct=31 mixed=0 wall=0.1s
+  k=1 D=2343      orbits=1400     homed=1400     distinct=31 mixed=0 wall=0.2s
+  k=2 D=7029      orbits=4200     homed=4200     distinct=31 mixed=0 wall=0.4s
+  k=3 D=21087     orbits=12600    homed=12600    distinct=31 mixed=0 wall=1.5s
+  k=4 D=63261     orbits=37800    homed=37800    distinct=31 mixed=0 wall=4.2s
+  -> reachable-up-to-k distinct cycles: 31  (registry homed at d': 31)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:31, 1:0, 2:0, 3:0, 4:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 943  (k = 0..4) ===
+  k=0 D=943       orbits=880      homed=880      distinct=24 mixed=0 wall=0.1s
+  k=1 D=2829      orbits=1760     homed=1760     distinct=24 mixed=0 wall=0.2s
+  k=2 D=8487      orbits=5280     homed=5280     distinct=24 mixed=0 wall=0.8s
+  k=3 D=25461     orbits=15840    homed=15840    distinct=24 mixed=0 wall=2.3s
+  k=4 D=76383     orbits=47520    homed=47520    distinct=24 mixed=0 wall=5.1s
+  -> reachable-up-to-k distinct cycles: 24  (registry homed at d': 24)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:24, 1:0, 2:0, 3:0, 4:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+=== d' = 997  (k = 0..4) ===
+  k=0 D=997       orbits=996      homed=996      distinct=13 mixed=0 wall=0.2s
+  k=1 D=2991      orbits=1992     homed=1992     distinct=13 mixed=0 wall=0.4s
+  k=2 D=8973      orbits=5976     homed=5976     distinct=13 mixed=0 wall=1.2s
+  k=3 D=26919     orbits=17928    homed=17928    distinct=13 mixed=0 wall=3.3s
+  k=4 D=80757     orbits=53784    homed=53784    distinct=13 mixed=0 wall=9.0s
+  -> reachable-up-to-k distinct cycles: 13  (registry homed at d': 13)
+  k_max(d') = 0  (no new reachable d'-homed cycle after this k)
+  first-appearance k counts: 0:13, 1:0, 2:0, 3:0, 4:0
+  no new cycles beyond the d<=1001 registry
+  all registry d'-homed cycles reached
+
+registry-completeness check for all swept d': PASS

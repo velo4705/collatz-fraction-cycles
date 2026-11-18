@@ -1,0 +1,5 @@
+# Large binary dumps and caches
+*.bin
+__pycache__/
+*.pyc
+*.pkl
