@@ -1,5 +1,7 @@
 # collatz-fraction-cycles
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24375499.svg)](https://doi.org/10.5281/zenodo.24375499)
+
 Periodic cycles of the rational Collatz map `T(x)` on fractions `a/d` (reduced,
 `d` odd, `1 ≤ a < d`, `3 ≤ d ≤ 1001`). `T(x) = x/2` if the reduced numerator is
 even, `T(x) = 3x + 1` otherwise. All arithmetic is exact
